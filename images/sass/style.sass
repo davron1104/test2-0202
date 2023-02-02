@@ -1,0 +1,410 @@
+html
+	box-sizing: border-box
+
+body
+	font-family: 'Ubuntu', sans-serif
+
+li
+	list-style: none
+
+a
+	text-decoration: none
+
+*
+	padding: 0
+	margin: 0
+	border: 0
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+	&::before, &::after
+		-moz-box-sizing: border-box
+		-webkit-box-sizing: border-box
+		box-sizing: border-box
+
+\:focus, :active
+	outline: none
+
+a
+	&:focus, &:active
+		outline: none
+
+nav, footer, header, aside
+	display: block
+
+html, body
+	height: 100%
+	width: 100%
+	font-size: 100%
+	line-height: 1
+	font-size: 14px
+	-ms-text-size-adjust: 100%
+	-moz-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+
+input, button, textarea
+	font-family: inherit
+
+input::-ms-clear
+	display: none
+
+button
+	cursor: pointer
+
+	&::-moz-focus-inner
+		padding: 0
+		border: 0
+
+a
+	text-decoration: none
+
+	&:visited, &:hover
+		text-decoration: none
+
+ul li
+	list-style: none
+
+img
+	vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+	font-size: inherit
+	font-weight: 400
+
+.container
+	width: 940px
+	margin: 0 auto
+		
+
+.wrapper
+		min-height: 100%
+		display: flex
+		flex-direction: column
+
+.main
+		flex: 1 1 auto      
+
+
+.menu
+	padding: 20px 0px 17px 0px
+	border-bottom: 1px solid #f2f2f2
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__navbar
+			&__item
+				display: flex
+				justify-content: space-between
+				align-items: center
+				li
+					&:not(:last-child)
+						a
+							padding-right: 55px
+					
+				li
+					a
+						color: #000
+						font-size: 14px
+						font-weight: 400
+						line-height: 30px
+						&:hover
+							color: #ffc425
+					
+		&__icons
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			width: 160px		
+
+.header
+	&-wrapper
+		padding: 47px 0px 45px 0px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		&__icon
+			display: block
+			width: 214px
+			height: 21px
+			flex: none
+			margin-bottom: 8px
+			img
+				width: 100%
+				height: auto
+		&__name
+			color: #000
+			font-size: 14px
+			font-weight: 400
+	&-location
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__icon
+		&__line
+			display: block
+			width: 1px
+			height: 52px
+			background-color: #f2f2f2
+			margin: 0px 20px 0px 20px
+		&__address
+			color: #000
+			font-size: 12px
+			font-weight: 400
+			margin-bottom: 8px
+		&__current
+			color: #000
+			font-size: 12px
+			font-weight: 400
+
+	&-phone
+		display: flex
+		align-items: center
+		&__line
+			display: block
+			width: 1px
+			height: 52px
+			background-color: #f2f2f2
+			margin: 0px 20px 0px 20px
+		&__call
+			color: #000
+			font-size: 12px
+			font-weight: 400
+			margin-bottom: 11px
+		&__number
+			a
+				color: #000
+				font-family: Ubuntu
+				font-size: 18px
+				font-weight: 700
+				
+	.button
+		width: 205px
+		height: 36px
+		border-radius: 18px
+		background-color: #ff694b
+		color: #fff
+		font-family: Ubuntu
+		font-size: 12px
+		font-weight: 400
+
+.list
+	background-color: #6a71c3
+	padding: 13px 0px 11px 0px
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__item
+			width: 
+			display: flex	
+			flex-wrap: wrap	
+			li
+				a
+					display: block
+					border: 1px solid #6a71c3
+					border-radius: 14px
+					padding: 11px 25px 
+					color: #ffffff
+					font-family: Ubuntu
+					font-size: 14px
+					font-weight: 700
+					&:hover
+						border: 1px solid #7c82ca
+						color: #fff
+						border-radius: 14px
+	.circle
+		background: transparent
+		width: 36px
+		height: 36px
+		border-radius: 50%
+		border: 1px solid #7f86cc
+
+.content
+	&-wrapper
+		padding: 50px 0px 67px 0px
+		flex: 1 1 auto
+		&__title
+			color: #010101
+			font-size: 30px
+			font-weight: 300
+			margin-bottom: 30px
+		&__descr
+			color: #000
+			font-size: 15px
+			font-weight: 400			
+			line-height: 30px	
+			margin-bottom: 37px
+	&-row
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between		
+		margin-bottom: 39px
+		&__column
+			&_first,
+			&_second
+				flex: none
+				width: 450px
+				height: 300px
+				img
+					width: 100%
+					height: auto
+					object-fit: cover
+
+.send
+	background-color: #6ac3b1
+	padding: 100px 0px 100px 0px
+	&-wrapper
+		
+		&__title
+			color: #fff
+			font-size: 30px
+			font-weight: 300
+			text-align: center
+			margin-bottom: 13px
+		&__subtitle
+			color: #fff
+			font-size: 16px
+			margin-bottom: 47px
+			text-align: center
+	&-form
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		&__input
+			width: 340px
+			height: 48px
+			border-radius: 24px
+			background-color: #fff
+			color: #000
+			font-size: 16px
+			font-weight: 400
+			padding-left: 30px
+			&[input=placeholder]
+				color: #000
+				font-family: Ubuntu
+				font-size: 16px
+				font-weight: 400
+		&__button
+			width: 220px
+			height: 48px
+			border-radius: 24px
+			border: 1px solid #ffc425
+			background-color: #ffc425	
+			color: #000
+			font-size: 16px
+			font-weight: 400
+
+.partner
+	padding: 100px 0px 100px 0px
+	&-wrapper
+		&__title
+			color: #010101
+			font-size: 30px
+			font-weight: 300
+			text-align: center		
+			margin-bottom: 66px
+	&-row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__column
+			max-width: 346px
+			min-height: 46px
+			img
+				width: 100%
+				height: auto
+				object-fit: cover
+
+.map
+	min-height: 449px
+	iframe
+		width: 100%
+
+.info
+	background-color: #6a71c3
+	padding: 100px 0px 96px 0px	
+	&-wrapper
+	&-row
+		display: flex
+		justify-content: space-between
+		flex-direction: row
+		flex-wrap: wrap
+		&__title
+			color: #fff
+			font-size: 18px
+			font-weight: 700	
+			margin-bottom: 27px
+	&-item
+		li
+			a
+				display: block
+				margin-bottom: 19px
+				color: #fff
+				font-size: 14px
+				font-weight: 400	
+				&:hover
+					color: #ffc425	
+		&-row
+			&__column
+				&_first
+					img
+						margin-right: 39px
+
+	&-phone,
+	&-location
+		display: flex
+		align-items: center
+		margin-bottom: 36px
+		img
+			margin-right: 39px
+	&-phone
+		&__call
+			color: #fff
+			font-size: 12px
+			margin-bottom: 11px
+		&__number
+			a
+				color: #ffffff
+				font-family: Ubuntu
+				font-size: 18px
+				font-weight: 700		
+	&-location
+		&__address
+			color: #ffffff
+			font-family: Ubuntu
+			font-size: 12px
+			font-weight: 400
+			margin-bottom: 8px
+		&__current
+			color: #ffffff
+			font-family: Ubuntu
+			font-size: 12px
+			font-weight: 400	
+	&-button
+		width: 205px
+		height: 36px
+		border-radius: 18px
+		background-color: #ff694b		
+		color: #ffffff
+		font-family: Ubuntu
+		font-size: 12px
+		font-weight: 400	
+
+.footer
+	text-align: center
+	padding: 92px 0px 113px 0px
+	&__copy,
+	&__year
+		opacity: 0.3
+		color: #010101
+		font-family: Ubuntu
+		font-size: 13px
+		font-weight: 400
+	&__copy
+		margin-bottom: 12px	
+
+		  
